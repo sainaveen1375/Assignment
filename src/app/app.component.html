@@ -1,0 +1,22 @@
+
+<!-- <input type="file" placeholder="select file or model" (change)="fileRead"> -->
+
+
+<div class="container mt-5">
+    <button class="btn btn-primary btn-center" (click)="graph()">Button</button>
+ 
+    CLICK THE BUTTON TO DISPLAY THE GRAPH
+  <fusioncharts *ngIf="isSharesChatEnable"
+  [width]="width"
+  [height]="height"
+  [type]="type"
+  [renderAt]='chart-container'
+  [dataFormat]="dataFormat"
+  [dataSource]="dataSource">
+</fusioncharts>
+</div>
+
+
+
+
+
